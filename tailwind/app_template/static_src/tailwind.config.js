@@ -5,6 +5,9 @@ module.exports = {
   important: false,
   separator: ':',
   theme: {
+    extend: {
+      fontFamily: { sans: ['Inter var'] },
+    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -723,5 +726,5 @@ module.exports = {
     transitionDelay: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/ui'),]
 }
